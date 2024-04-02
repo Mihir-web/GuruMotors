@@ -1,0 +1,110 @@
+Home Page
+	Banner slideshow
+	Browse by make
+	Browse by type
+	why choose us?
+	Journey
+	welcome to
+	Featured car
+	Testimonial
+	Contact us
+	footer
+	
+Listing Page
+	refer this page https://www.coliseumauto.ca/vehicles/?st=make,asc&view=grid 
+Contact us Page
+	refer this for input fields https://www.coliseumauto.ca/contact/
+About Us Page
+    bussiness information
+	contact us
+
+
+
+
+Questions
+
+1. Logo
+2. Content
+3. How many pages
+4. Contact us page
+
+
+
+
+
+
+Contact us lead
+	first name
+	last name
+	email
+	phone
+	best time to call
+	Message
+
+Cars attribute
+	attribute name
+	options
+	is_active
+
+Brand
+	id
+	name
+	photo
+	is_active
+
+specification
+	id 
+	name
+	
+	
+models
+	id
+	model name
+	is_active
+	
+Inventory
+	id
+	name
+	brand
+	model
+	year
+	body style
+	odometer
+	transmission
+	engine
+	engine size
+	Driveline
+	exterier color
+	doors
+	interior color
+	passanger
+	fuel type
+	city fuel
+	Hwy fuel
+	stock number
+	VIN
+	is_active
+	image_url
+	meta-title
+	specification
+	short description
+	
+
+Inventory gallery
+	id
+	parent record id
+	img url
+	is_active
+
+contact info
+	id
+	bussiness name
+	email
+	phone
+	location
+	facebook link
+	instagram link
+	privacy policy
+
+
+
