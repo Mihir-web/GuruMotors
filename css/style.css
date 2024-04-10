@@ -2564,7 +2564,7 @@ font-family: 'Outfit', sans-serif;
     font-family: 'Outfit', sans-serif;
     font-size: 32px;
     line-height: 1.2em;
-    color: #1b1b1b;
+    color: #fff;
     font-weight: 700;
     margin: 0;
 }
@@ -2572,7 +2572,7 @@ font-family: 'Outfit', sans-serif;
     font-family: 'Outfit', sans-serif;
     margin-bottom: 0;
     font-size: 14px;
-    color: #1b1b1b;
+    color: #fff;
     font-weight: 300;
 }
 .car-details .sidebar-car .item {
@@ -2619,7 +2619,7 @@ font-family: 'Outfit', sans-serif;
     border-radius: 100%;
     background: #333;
     position: absolute;
-    left: 50%;
+    left: 51%;
     top: 15px;
     margin-left: -28px;
     line-height: 28px;
