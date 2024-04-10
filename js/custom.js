@@ -54,7 +54,7 @@ $(function () {
             logo.attr('src', 'img/logo-dark.png');
         } else {
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'img/logo-light.png');
+            logo.attr('src', 'img/logo.png');
         }
     });
    
