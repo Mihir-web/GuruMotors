@@ -5604,10 +5604,39 @@ height: 100% !important;
 
 
 
-.small_images{
-    background-position: center;
+/* .small_images{
+    object-fit: cover; 
+    object-fit:scale-down;
+    height:50px;
+    width:50px;
     background-size: cover;
-    height:70px;
-    width:100px;
-    border-radius: 15px;
+    background-position: center;
+    
 }
+.small_images img{
+    object-fit: cover;
+    border-radius: 6px;
+} */
+
+.gallery-container {
+    display: flex; /* Use flexbox to arrange images */
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+  }
+  
+  /* Style for each image in the gallery */
+  .gallery-item {
+    width: 50px; /* Set a fixed width for each image container */
+    height: 50px; /* Set a fixed height for each image container */
+    margin: 5px; /* Add some margin between images */
+    overflow: hidden; /* Hide overflow to prevent distortion */
+  }
+  
+  /* Style for the images themselves */
+  .gallery-item img {
+    width: 100%; /* Make the image fill its container */
+    height: 100%; /* Make the image fill its container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px;
+  }
+
+  /* gallery-item-main */
