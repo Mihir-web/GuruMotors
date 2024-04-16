@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .image-container {
+            width: 200px; /* Define the width you want for each image */
+            height: auto; /* Height will be adjusted to maintain aspect ratio */
+            margin: 10px; /* Add some margin between images */
+            overflow: hidden; /* Ensure images don't overflow container */
+            border: 1px solid #ccc; /* Optional: Add border for better separation */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            max-width: 100%; /* Ensure the image doesn't exceed the container width */
+            height: auto; /* Allow the height to adjust to maintain aspect ratio */
+            display: block; /* Ensure images don't have any extra space below them */
+            margin: 0 auto; /* Center the image horizontally within the container */
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: center;">
+    <div class="image-container">
+        <img src="./img/clients/Audi.png" alt="Image 1">
+    </div>
+    <div class="image-container">
+        <img src="./img/clients/BMW.png" alt="Image 2">
+    </div>
+    <div class="image-container">
+        <img src="./img/clients/Mercedes.png" alt="Image 3">
+    </div>
+    <div class="image-container">
+        <img src="./img/clients/Volvo.png" alt="Image 4">
+    </div>
+    <div class="image-container">
+        <img src="./img/clients/Volkswagen.png" alt="Image 5">
+    </div>
+    <div class="image-container">
+        <img src="./img/clients/Mitsubishi.png" alt="Image 1">
+    </div>
+    <div class="image-container">
+        <img src="./img/clients/Honda.png" alt="Image 2">
+    </div>
+    <div class="image-container">
+        <img src="./img/clients/Hyundai.png" alt="Image 3">
+    </div>
+    <div class="image-container">
+        <img src="./img/clients/Subaru.png" alt="Image 4">
+    </div>
+    
+</div>
+</body>
+</html>
