@@ -5351,23 +5351,23 @@ height: 100% !important;
     background: #ed1c24;
     color: #1b1b1b;
 }
-/* newsletter */
-.widget-newsletter {
+/* search input */
+.inventory-search {
     position: relative;
 }
-.widget-newsletter input {
+.inventory-search input {
     height: 60px;
     width: 100%;
     border: none;
     background: transparent;
     font-size: 14px;
-    color: #fff;
+    color: #000;
     outline: none;
     padding: 0 90px 0 20px;
     border: 1px solid #ed1c24;
     border-radius: 30px;
 }
-.widget-newsletter button {
+.inventory-search button {
     height: 50px;
     width: 50px;
     border: none;
@@ -5390,10 +5390,11 @@ height: 100% !important;
     -o-transition: all 0.7s linear;
     transition: all 0.7s linear;
 }
-.widget-newsletter input::placeholder {
-    color: rgba(255, 255, 255, 0.8);
+.inventory-search input::placeholder {
+    /* color: rgba(255, 255, 255, 0.8); */
+    color:#000;
 }
-.widget-newsletter:hover button {
+.inventory-search:hover button {
     background: #fff;
     color: #1b1b1b;
     outline: none;

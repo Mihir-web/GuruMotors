@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap">
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
-    
+
 </head>
 
 <body>
@@ -81,11 +82,138 @@
         </div>
     </section>
     <!-- Details -->
-    <section class="cars2 section-padding">
+    <section class="cars2 mt-60 mb-60">
         <div class="container">
-
+            <div class="row d-flex justify-content-between mb-4">
+            <div class="col-md-4">
+                <div class="inventory-search">
+                    <form action="#">
+                        <input type="search_input" placeholder="Search By Name, and Model" required>
+                        <button type="submit"><i class="ti-arrow-top-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 text-end">
+                <a class="button-4" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Filters 
+                </a>
+            </div>
+        </div>
+            <div class="col-md-12 col-lg-12 col-12 collapse mb-30" id="collapseExample">
+                <div class="card card-body">
+                    <h4>Filters</h4>
+                    <form action="#0" class="form1 brdr clearfix">
+                        <div class="col2 c3">
+                            <div class="select1_wrapper">
+                                <label>Choose Car Type</label>
+                                <div class="select1_inner">
+                                    <select class="select2 select" style="width: 100%">
+                                        <option value="0">Filter By Car Type</option>
+                                        <option value="1">All</option>
+                                        <option value="2">Luxury Cars</option>
+                                        <option value="3">Sport Cars</option>
+                                        <option value="4">SUVs</option>
+                                        <option value="5">Convertible</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2 c4">
+                            <div class="select1_wrapper">
+                                <label>Filter By Car Brand</label>
+                                <div class="select1_inner">
+                                    <select class="select2 select" style="width: 100%">
+                                        <option value="0">Filter By Car Brand</option>
+                                        <option value="BMW">BMW</option>
+                                        <option value="Audi">Audi</option>
+                                        <option value="Mercedes">Mercedes</option>
+                                        <option value="Volvo">Volvo</option>
+                                        <option value="Jeep">Jeep</option>
+                                        <option value="Subaru">Subaru</option>
+                                        <option value="Volkswagen">Volkswagen</option>
+                                        <option value="Hyundai">Hyundai</option>
+                                        <option value="Honda">Honda</option>
+                                        <option value="Lexus">Lexus</option>
+                                        <option value="Mitsubishi">Mitsubishi</option>
+                                        <option value="Nissan">Nissan</option>
+                                        <option value="Ford">Ford</option>
+                                        <option value="Toyota">Toyota</option>
+                                        <option value="Dodge">Dodge</option>
+                                        <option value="Kia">Kia</option>
+                                        <option value="Chrysler">Chrysler</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2 c4">
+                            <div class="select1_wrapper">
+                                <label>Filter By Year</label>
+                                <div class="select1_inner">
+                                    <select class="select2 select" style="width: 100%">
+                                        <option value="0">Filter By Year</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2 c5">
+                            <div class="select1_wrapper">
+                                <label>Filter By Color</label>
+                                <div class="select1_inner">
+                                    <select class="select2 select" style="width: 100%">
+                                        <option value="0">Filter By Color</option>
+                                        <option value="1">White</option>
+                                        <option value="2">Black</option>
+                                        <option value="3">Gray</option>
+                                        <option value="4">Red</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2 c5">
+                            <div class="select1_wrapper">
+                                <label>Filter By Transmission</label>
+                                <div class="select1_inner">
+                                    <select class="select2 select" style="width: 100%">
+                                        <option value="0">Filter By Transmission</option>
+                                        <option value="1">Automatic</option>
+                                        <option value="2">Manual</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col3 c6">
+                            <button type="submit" class="button-4">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <div class="row" id="cars">
-               <div class="col-lg-12 col-md-12 car-list">
+                <div class="col-lg-12 col-md-12 car-list">
                     <div class="row list d-flex">
                         <div class="col-lg-3 col-md-12 mb-30">
                             <div class="item">
@@ -114,10 +242,10 @@
                                         <div class="book">
                                             <div class="w-100 d-flex justify-content-between">
                                                 <div class="price">$170 <span>/ Biwk</span>
-                                                <p>7.99% for 72 months</p>
+                                                    <p>7.99% for 72 months</p>
                                                 </div>
                                                 <div class="price">$18,500
-                                                    </div>
+                                                </div>
                                             </div> <a href="./car-detail-5289.html" class="button-5">View Detail</a>
                                         </div>
                                     </div>
@@ -129,13 +257,13 @@
                                 <figure> <img src="img/cars/IMG_5300.jpg" alt="" class="img-fluid"> </figure>
                                 <div class="content">
                                     <div class="cont">
-                                        <h4 class="car_name">2021 Kia Forte 
+                                        <h4 class="car_name">2021 Kia Forte
                                             <span style="font-size: 14px;
                                             font-weight: 300;
                                             line-height: 1.95em;
                                             color: #555; margin-left:5px;">EX FWD</span>
-                                       </h4>
-                                        
+                                        </h4>
+
                                         <!-- <div class="features"><span> Color</span>
                                             <p>White/Black</p>
                                         </div>
@@ -151,7 +279,9 @@
                                             </div> -->
                                         <div class="book">
                                             <div class="w-100 d-flex justify-content-between">
-                                                <div class="price">$175 <span>/ Biwk</span><p>7.99% for 84 months</p></div>
+                                                <div class="price">$175 <span>/ Biwk</span>
+                                                    <p>7.99% for 84 months</p>
+                                                </div>
                                                 <div class="price">$21,599</div>
                                             </div> <a href="#0" class="button-5">View Detail</a>
                                         </div>
@@ -186,7 +316,9 @@
                                             </div> -->
                                         <div class="book">
                                             <div class="w-100 d-flex justify-content-between">
-                                                <div class="price">$173 <span>/ Biwk</span><p>7.99% for 84 months</p></div>
+                                                <div class="price">$173 <span>/ Biwk</span>
+                                                    <p>7.99% for 84 months</p>
+                                                </div>
                                                 <div class="price">$21,500</div>
                                             </div> <a href="#0" class="button-5">View Detail</a>
                                         </div>
@@ -221,7 +353,9 @@
                                             </div>-->
                                         <div class="book">
                                             <div class="w-100 d-flex justify-content-between">
-                                                <div class="price">$222 <span>/ Biwk</span><p>7.99% for 60 months</p></div>
+                                                <div class="price">$222 <span>/ Biwk</span>
+                                                    <p>7.99% for 60 months</p>
+                                                </div>
                                                 <div class="price">$21,000</div>
                                             </div> <a href="#0" class="button-5">View Detail</a>
                                         </div>
@@ -229,7 +363,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-3 col-md-12 mb-30">
                             <div class="item">
                                 <figure> <img src="img/cars/IMG_8320.jpg" alt="" class="img-fluid"> </figure>
@@ -242,7 +376,7 @@
                                         <!-- <div class="features"><span>Trim </span>
                                             <p>Highline</p>
                                         </div> -->
-                                         <!--<div class="features"><span> Color</span>
+                                        <!--<div class="features"><span> Color</span>
                                             <p>Black/Black</p>
                                         </div>
                                         <div class="features"><span>
@@ -257,7 +391,9 @@
                                             </div> -->
                                         <div class="book">
                                             <div class="w-100 d-flex justify-content-between">
-                                                <div class="price">$187 <span>/ Biwk</span><p>7.99% for 84 months</p></div>
+                                                <div class="price">$187 <span>/ Biwk</span>
+                                                    <p>7.99% for 84 months</p>
+                                                </div>
                                                 <div class="price">$22,999</div>
                                             </div> <a href="#0" class="button-5">View Detail</a>
                                         </div>
@@ -278,7 +414,7 @@
                                         <!-- <div class="features"><span>Trim </span>
                                             <p>Highline</p>
                                         </div> -->
-                                         <!--<div class="features"><span> Color</span>
+                                        <!--<div class="features"><span> Color</span>
                                             <p>Black/Black</p>
                                         </div>
                                         <div class="features"><span>
@@ -293,7 +429,9 @@
                                             </div> -->
                                         <div class="book">
                                             <div class="w-100 d-flex justify-content-between">
-                                                <div class="price">$187 <span>/ Biwk</span><p>7.99% for 84 months</p></div>
+                                                <div class="price">$187 <span>/ Biwk</span>
+                                                    <p>7.99% for 84 months</p>
+                                                </div>
                                                 <div class="price">$22,999</div>
                                             </div> <a href="#0" class="button-5">View Detail</a>
                                         </div>
@@ -527,4 +665,5 @@
         var carList = new List('cars', options);
 </script> -->
 </body>
+
 </html>
