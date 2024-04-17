@@ -104,7 +104,7 @@ h5,
 h6 {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
-    line-height: 1.5em;
+    /* line-height: 1.5em; */
     margin: 0 0 15px 0;
     color: #1b1b1b;
 }
@@ -2474,7 +2474,7 @@ font-family: 'Outfit', sans-serif;
 }
 .cars2 .car-list .item .content {
     width: 100%;
-    padding: 30px;
+    padding: 15px;
     background: #f2f2f2;
     border-radius: 0 0 20px 20px;
 }
@@ -2523,7 +2523,7 @@ font-family: 'Outfit', sans-serif;
     font-size: 14px;
 }
 .cars2 .car-list .item .content .cont .book .price {
-    font-size: 21px;
+    font-size: 15px;
     line-height: 1.2em;
     color: #ed1c24;
     font-weight: 700;
@@ -5026,6 +5026,37 @@ height: 100% !important;
     color: #fff;
 }
 
+/* button 5 */
+.button-5 {
+    display: inline-block;
+    height: auto;
+    padding: 5px 15px;
+    border: 1px solid #1b1b1b;
+    border-radius: 30px;
+    background-color: #1b1b1b;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    transition: border-color 300ms ease, transform 300ms ease, background-color 300ms ease, color 300ms ease;
+    transform-style: preserve-3d;
+}
+[data-overlay-dark] .button-5 span,
+.button-5 span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #fff;
+}
+.button-5:hover {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #1b1b1b;
+    transform: translate3d(0px, -6px, 0.01px);
+}
+.button-5:hover span {
+    color: #1b1b1b;
+}
 
 /* ======= LetsTalk style ======= */
 .lets-talk {
@@ -5643,4 +5674,9 @@ height: 100% !important;
 
   .testimonials .item .stars .rated{
     color: #ed1c24;
+  }
+
+  .car_name{
+    height:40px;
+    font-size:15px;
   }
