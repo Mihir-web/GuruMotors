@@ -1007,10 +1007,10 @@ hr {
     }
     .logo-wrapper {
         float: left;
-        padding: 28.5px 15px;
+        padding: 15px;
     }
     .nav-scroll .logo-wrapper {
-        padding: 28.5px 15px;
+        padding: 15px;
         background-color: transparent;
     }
     .nav-scroll .logo-img {
