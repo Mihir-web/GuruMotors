@@ -308,25 +308,30 @@ $(function () {
     });
     
     // MagnificPopup
-    $(".img-zoom").magnificPopup({
-        type: "image",
-        closeOnContentClick: !0,
-        mainClass: "mfp-fade",
-        gallery: {
-            enabled: !0,
-            navigateByImgClick: !0,
-            preload: [0, 1]
-        }
-    })
-    $('.magnific-youtube, .magnific-vimeo, .magnific-custom').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 300,
-        preloader: false,
-        fixedContentPos: false
-    });
+    // $(".img-zoom").magnificPopup({
+    //     type: "image",
+    //     closeOnContentClick: !0,
+    //     mainClass: "mfp-fade",
+    //     gallery: {
+    //         enabled: !0,
+    //         navigateByImgClick: !0,
+    //         preload: [0, 1]
+    //     }
+    // })
+    // $('.magnific-youtube, .magnific-vimeo, .magnific-custom').magnificPopup({
+    //     disableOn: 700,
+    //     type: 'iframe',
+    //     mainClass: 'mfp-fade',
+    //     removalDelay: 300,
+    //     preloader: false,
+    //     fixedContentPos: false
+    // });
     
+    $('.fancybox').fancybox({
+        clickContent: 'close',
+        buttons: ['close']
+      });
+
     // Accordion
     if ($(".accordion-box").length) {
         $(".accordion-box").on("click", ".acc-btn", function () {
