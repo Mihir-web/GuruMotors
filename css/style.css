@@ -3155,7 +3155,7 @@ font-family: 'Outfit', sans-serif;
     right: 0;
     padding: 10px 20px 10px 20px;
     border-radius: 0 0 0 20px;
-    color: #ed1c24;
+    color: #8e8c8c;
     background: #fff;
 }
 .testimonials .item .stars i {
@@ -5640,3 +5640,7 @@ height: 100% !important;
   }
 
   /* gallery-item-main */
+
+  .testimonials .item .stars .rated{
+    color: #ed1c24;
+  }
