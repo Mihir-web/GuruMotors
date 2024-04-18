@@ -327,10 +327,10 @@ $(function () {
     //     fixedContentPos: false
     // });
     
-    $('.fancybox').fancybox({
-        clickContent: 'close',
-        buttons: ['close']
-      });
+    // $('.fancybox').fancybox({
+    //     clickContent: 'close',
+    //     buttons: ['close']
+    //   });
 
     // Accordion
     if ($(".accordion-box").length) {
