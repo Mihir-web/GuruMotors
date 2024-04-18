@@ -2080,7 +2080,6 @@ font-family: 'Outfit', sans-serif;
     overflow: hidden;
     z-index: 1;
     border-radius: 20px;
-    
         width: 100%;
     transform: scale(1);
     transition: transform 500ms ease;
