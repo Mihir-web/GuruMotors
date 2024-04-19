@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +11,11 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap">
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cms.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.css" />
 </head>
 
 <body>
@@ -72,7 +77,7 @@
         </div>
     </nav>
     <!-- Header Banner -->
-    <section class="banner-header section-padding bg-img" data-overlay-dark="5" data-background="img/slider/11.jpg">
+    <section class="banner-header section-padding bg-img" data-overlay-dark="6" data-background="img/slider/11.jpg">
         <div class="v-middle">
             <div class="container">
                 <div class="col-md-12 text-center">
@@ -93,69 +98,36 @@
                             <h3>Image Gallery</h3>
                         </div>
                     </div>
-                    <div class="row gallery-items mb-60">
-                        <div class="col-lg-12 col-md-6 gallery-masonry-wrapper single-item cardio">
-                            <a href="img/slider/11b.jpg" title="" class="fancybox" data-fancybox-group="gallery">
-                                 <img src="img/slider/11b.jpg" />
-                            </a>
+
+
+                    <div class="f-carousel" id="myCarousel">
+                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5290.jpg">
+                            <a href="./img/cars/IMG_5290.jpg" data-fancybox="gallery"><img width="640" height="480"
+                                    alt="" data-lazy-src="./img/cars/IMG_5290.jpg" /></a>
                         </div>
-                        <div class="col-lg-12 col-md-6 d-flex gallery-container gallery-masonry-wrapper single-item cardio">
-                            <div class="small_images gallery-item"><img src="./img/cars/IMG_5290.jpg"></div>
-                            <div class="small_images gallery-item"><img src="./img/cars/IMG_5291.jpg"></div>
-                            <div class="small_images gallery-item"><img src="./img/cars/IMG_5292.jpg"></div>
-                            <div class="small_images gallery-item"><img src="./img/cars/IMG_5293.jpg"></div>
-                            <div class="small_images gallery-item"><img src="./img/cars/IMG_5294.jpg"></div>
-                            <div class="small_images gallery-item"><img src="./img/cars/IMG_5295.jpg"></div>
-                            <div class="small_images gallery-item"><img src="./img/cars/IMG_5296.jpg"></div>
+                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5291.jpg">
+                            <a href="./img/cars/IMG_5291.jpg" data-fancybox="gallery"><img width="640" height="480"
+                                    alt="" data-lazy-src="./img/cars/IMG_5291.jpg" /></a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 mb-60">
-                            <h3>Description</h3>
-                            <p class="mb-30">Lorem pretium fermentum quam, sit amet cursus ante sollicitudin velen morbi
-                                consesua the miss sustion consation porttitor orci sit amet iaculis nisan. Lorem pretium
-                                fermentum quam sit amet cursus ante sollicitudin velen fermen morbinetion consesua the
-                                risus consequation the porttiton.</p>
-                            <ul class="list-unstyled list mb-30">
-                                <li>
-                                    <div class="list-icon"> <span class="ti-check"></span> </div>
-                                    <div class="list-text">
-                                        <p>24/7 Roadside Assistance</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list-icon"> <span class="ti-check"></span> </div>
-                                    <div class="list-text">
-                                        <p>Free Cancellation & Return</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list-icon"> <span class="ti-check"></span> </div>
-                                    <div class="list-text">
-                                        <p>Rent Now Pay When You Arrive</p>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5292.jpg">
+                            <a href="./img/cars/IMG_5292.jpg" data-fancybox="gallery"><img width="640" height="480"
+                                    alt="" data-lazy-src="./img/cars/IMG_5292.jpg" /></a>
                         </div>
-                    </div>
-                    <!-- FAQs -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3>Features</h3>
+                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5293.jpg">
+                            <a href="./img/cars/IMG_5293.jpg" data-fancybox="gallery"><img width="640" height="480"
+                                    alt="" data-lazy-src="./img/cars/IMG_5293.jpg" /></a>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-12">
-                            <ul class="accordion-box clearfix">
-                                <li class="accordion block">
-                                    <div class="acc-btn"><span class="count">1.</span> LED Headlamp</div>
-                                    <div class="acc-content">
-                                        <div class="content">
-                                            <div class="text">A LED headlamp is a lightweight and versatile lighting solution designed to be worn on the head. Powered by energy-efficient LED bulbs, it offers bright illumination for hands-free tasks and activities such as camping, hiking, running, or working in dark environments. With an adjustable head strap and tiltable housing, LED headlamps provide comfortable wear and customizable lighting angles. They are compact, durable, and often water-resistant, making them essential tools for outdoor enthusiasts and professionals alike.</div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5294.jpg">
+                            <a href="./img/cars/IMG_5294.jpg" data-fancybox="gallery"><img width="640" height="480"
+                                    alt="" data-lazy-src="./img/cars/IMG_5294.jpg" /></a>
+                        </div>
+                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5295.jpg">
+                            <a href="./img/cars/IMG_5295.jpg" data-fancybox="gallery"><img width="640" height="480"
+                                    alt="" data-lazy-src="./img/cars/IMG_5295.jpg" /></a>
+                        </div>
+                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5296.jpg">
+                            <a href="./img/cars/IMG_5296.jpg" data-fancybox="gallery"><img width="640" height="480"
+                                    alt="" data-lazy-src="./img/cars/IMG_5296.jpg" /></a>
                         </div>
                     </div>
                 </div>
@@ -163,7 +135,8 @@
                 <div class="col-lg-4 col-md-12">
                     <div class="sidebar-car">
                         <div class="title d-flex justify-content-between">
-                            <h4>$18,500</h4> <h4>/</h4>
+                            <h4>$18,500</h4>
+                            <h4>/</h4>
                             <div>
                                 <h4>$170 <span>/ Bi weekly</span></h4>
                                 <h4><span>7.99% for 72 months</span></h4>
@@ -189,9 +162,211 @@
                             <div class="features"><span><i class="omfi-luggage"></i> Transmission</span>
                                 <p>Automatic</p>
                             </div>
+                            <div class="features"><span><i class="omfi-luggage"></i> Km Driven</span>
+                                <p>1,29,937</p>
+                            </div>
                             <div class="btn-double mt-30" data-grouptype="&amp;"> <a href="#0">Contact Us</a> <a
                                     href="https://api.whatsapp.com/send?phone=8551004444" target="_blank"><span
                                         class="fa-brands fa-whatsapp"></span> WhatsApp</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-12 mb-60">
+                        <h3>Description</h3>
+                        <p>***EASY FINANCE APPROVALS***NO ACCIDENTS*SUNROOF*ALLOYS*BLUETOOTH*HEATED SEATS*BACK UP CAM
+                        AND MORE! LOVE AT FIRST SIGHT! VEHICLE IS LIKE NEW! QUALITY ALL AROUND VEHICLE. GREAT
+                        MID-SIZE SEDAN FOR SMALL FAMILY OR STUDENT. ABSOLUTELY FLAWLESS, SMOOTH, SPORTY RIDE AND
+                        GREAT ON GAS! MECHANICALLY A+ DEPENDABLE, RELIABLE, COMFORTABLE, CLEAN INSIDE AND OUT.
+                        POWERFUL YET FUEL EFFICIENT ENGINE. HANDLES VERY WELL WHEN DRIVING.</p>
+
+
+
+                        <p class="cms-description-title">Make this yours today BECAUSE YOU DESERVE IT</p>
+
+
+
+                        <p>WE HAVE SKILLED AND KNOWLEDGEABLE SALES STAFF WITH MANY YEARS OF EXPERIENCE SATISFYING ALL
+                        OUR CUSTOMERS NEEDS. THEY'LL WORK WITH YOU TO FIND THE RIGHT VEHICLE AND AT THE RIGHT PRICE
+                        YOU CAN AFFORD. WE GUARANTEE YOU WILL HAVE A PLEASANT SHOPPING EXPERIENCE THAT IS FUN,
+                        INFORMATIVE, HASSLE FREE AND NEVER HIGH PRESSURED. PLEASE DON'T HESITATE TO GIVE US A CALL
+                        OR VISIT OUR INDOOR SHOWROOM TODAY! WE'RE HERE TO SERVE YOU!!</p>
+
+
+
+                        <p class="cms-description-title">Financing</p>
+
+
+
+                        <p>We offer amazing financing options. Our Financing specialists can get you INSTANTLY approved
+                        for a car loan with the interest rates as low as 3.99% and $0 down (O.A.C). Additional
+                        financing fees may apply. Auto Financing is our specialty. Our experts are proud to say 100%
+                        APPLICATIONS ACCEPTED, FINANCE ANY CAR, ANY CREDIT, EVEN NO CREDIT! It's FREE TO APPLY and
+                        Our process is fast & easy. We can often get YOU AN approval and deliver your NEW car the
+                        SAME DAY.</p>
+
+
+
+                        <p class="cms-description-title">Price</p>
+
+
+
+                        <p>FRONTIER FINE CARS is known to be one of the most competitive dealerships within the Greater
+                        Toronto Area providing high quality vehicles at low price points. Prices are subject to
+                        change without notice. All prices are price of the vehicle plus HST, Licensing & Safety
+                        Certification. DISCLAIMER: This vehicle is not Drivable as it is not Certified. All vehicles
+                        we sell are Drivable after certification, which is available for $695 but not manadatory.</p>
+
+
+
+                        <p class="cms-description-title">Trade</p>
+                        <p>Have a trade? Well take it! We offer free appraisals for our valued clients that
+                        would like to trade in their old unit in for a new one.</p>
+
+
+
+                        <p class="cms-description-title">About us</p>
+
+
+
+                        <p>Frontier fine cars, offers a huge selection of vehicles in an immaculate INDOOR showroom.
+                        Our goal is to provide our customers WITH quality vehicles AT EXCELLENT prices with
+                        IMPECCABLE customer service. Not only do we sell vehicles, we always sell peace of mind!</p>
+
+
+
+                        <p>Buy with confidence and call today 416-759-2277 or email us to book a test drive now!
+                        frontierfinecars@hotmail.com Located @ 1261 Kennedy Rd Unit a in Scarborough</p>
+
+
+
+                        <p class="cms-description-title">NO REASONABLE OFFERS REFUSED</p>
+
+
+
+                        <p>DISCLAIMER: This vehicle is not Drivable as it is not Certified. All vehicles we sell are
+                        Drivable after certification, which is available for $695</p>
+
+                        <p>Thank you for your consideration & we look forward to putting you in your next vehicle!
+                        Serving used cars Toronto, Scarborough, Pickering, Ajax, Oshawa, Whitby, Markham, Richmond
+                        Hill, Vaughn, Woodbridge, Mississauga, Trenton, Peterborough, Lindsay, Bowmanville,
+                        Oakville, Stouffville, Uxbridge, Sudbury, Thunder Bay,Timmins, Sault Ste. Marie, London,
+                        Kitchener, Brampton, Cambridge, Georgetown, St Catherines, Bolton, Orangeville, Hamilton,
+                        North York, Etobicoke, Kingston, Barrie, North Bay, Huntsville, Orillia</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>Features</h3>
+                        <ul style="columns: 3;">
+                            <li class="cms-feature-type"><span>Mechanical</span>
+                                <ul>
+                                    <li>Anti-Lock Brakes</li>
+                                    <li>Power Steering</li>
+                                    <li>4-Wheel Disc Brakes</li>
+                                    <li>Push Button Start</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Safety</span>
+                                <ul>
+                                    <li>Driver Air Bag</li>
+                                    <li>Passenger Air Bag</li>
+                                    <li>Side Air Bag</li>
+                                    <li>Traction Control</li>
+                                    <li>Heated Mirrors</li>
+                                    <li>Rear Window Defrost</li>
+                                    <li>Brake Assist</li>
+                                    <li>Stability Control</li>
+                                    <li>Back-Up Camera</li>
+                                    <li>Child Safety Locks</li>
+                                    <li>Rear Head Air Bag</li>
+                                    <li>Rear Parking Aid</li>
+                                    <li>Rearview Camera</li>
+                                    <li>Front Head Air Bag</li>
+                                    <li>Passenger Air Bag Sensor</li>
+                                    <li>Blind Spot Monitor</li>
+                                    <li>Rear Spoiler</li>
+                                    <li>Aluminum Wheels</li>
+                                    <li>Automatic Headlights</li>
+                                    <li>Temporary spare tire</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Exterior</span>
+                                <ul>
+                                    <li>Fog Lights</li>
+                                    <li>Alloy Wheels</li>
+                                    <li>Daytime Running Lights</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Interior</span>
+                                <ul>
+                                    <li>Security System</li>
+                                    <li>Air Conditioning</li>
+                                    <li>Cruise Control</li>
+                                    <li>Keyless Entry</li>
+                                    <li>Tilt Steering Wheel</li>
+                                    <li>Bucket Seat</li>
+                                    <li>Power Door Locks</li>
+                                    <li>Trip Computer</li>
+                                    <li>Leather Steering Wheel</li>
+                                    <li>Heated Steering Wheel</li>
+                                    <li>Steering Wheel Audio Controls</li>
+                                    <li>Driver Vanity Mirror</li>
+                                    <li>Remote Trunk Release</li>
+                                    <li>Rear Bench Seat</li>
+                                    <li>Engine Immobilizer</li>
+                                    <li>Keyless Start</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Power Options</span>
+                                <ul>
+                                    <li>Power Mirrors</li>
+                                    <li>Power Windows</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Media / Nav / Comm</span>
+                                <ul>
+                                    <li>AM/FM Radio</li>
+                                    <li>CD Player</li>
+                                    <li>MP3 Player</li>
+                                    <li>Bluetooth</li>
+                                    <li>Satellite Radio</li>
+                                    <li>Auxiliary Audio Input</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Seating</span>
+                                <ul>
+                                    <li>Heated Seats</li>
+                                    <li>Cloth Seats</li>
+                                    <li>Pass-Through Rear Seat</li>
+                                    <li>Power Driver Seat</li>
+                                    <li>Driver Adjustable Lumbar</li>
+                                    <li>Heated Front Seat(s)</li>
+                                </ul>
+                            </li>
+                            <l class="cms-feature-type"i><span>Comfort</span>
+                                <ul>
+                                    <li>Sunroof / Moonroof</li>
+                                    <li>Climate Control</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Warranty</span>
+                                <ul>
+                                    <li>Warranty Available</li>
+                                    <li>Warranty Included</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Convenience</span>
+                                <ul>
+                                    <li>Variable Speed Intermittent Wipers</li>
+                                    <li>Passenger Vanity Mirror</li>
+                                    <li>Driver Illuminated Vanity Mirror</li>
+                                    <li>Passenger Illuminated Visor Mirror</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div>
+                            Please contact us to confirm pricing, features, odometer, and availability of this vehicle. Although every effort is made to provide accurate, reliable, and current information, we provide no guarantee as to the reliability, completeness, or accuracy of the information; and it may be subject to change without notice.
                         </div>
                     </div>
                 </div>
@@ -287,12 +462,19 @@
                             <div class="footer-logo"><img src="img/logo.png" alt=""></div>
                             <!-- <div class="footer-logo"><h2>CARE<span>X</span></h2></div> -->
                             <div class="widget-text">
-                                <p>Rent a car imperdiet sapien porttito the bibenum ellentesue the commodo erat nesuen.</p>
+                                <p>Rent a car imperdiet sapien porttito the bibenum ellentesue the commodo erat nesuen.
+                                </p>
                                 <div class="social-icons">
                                     <ul class="list-inline">
-                                        <a href="whatsapp://send?phone=16478966642"><li><i class="fa-brands fa-whatsapp"></i></li></a>
-                                        <a href="#"><li><i class="fa-brands fa-facebook-f"></i></li></a>
-                                        <a href="https://www.instagram.com/cars_by_guru?igsh=MW9kMWduZ2puNm83NQ=="><li><i class="fa-brands fa-instagram"></i></li></a>
+                                        <a href="whatsapp://send?phone=16478966642">
+                                            <li><i class="fa-brands fa-whatsapp"></i></li>
+                                        </a>
+                                        <a href="#">
+                                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                                        </a>
+                                        <a href="https://www.instagram.com/cars_by_guru?igsh=MW9kMWduZ2puNm83NQ==">
+                                            <li><i class="fa-brands fa-instagram"></i></li>
+                                        </a>
                                     </ul>
                                 </div>
                             </div>
@@ -386,23 +568,27 @@
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
-    <!-- <script src="js/jquery.magnific-popup.js"></script> -->
+    <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/select2.js"></script>
     <script src="js/datepicker.js"></script>
     <script src="js/YouTubePopUp.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.thumbs.umd.js"></script>
+    <script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.0.2/list.min.js"></script>
 
-    <!-- <script>
-        var options = {
-            valueNames: ['car_name'],
-            page: 4, // Number of items per page
-            pagination: true
-        };
+        const container = document.getElementById("myCarousel");
+        const options = { Dots: false };
 
-        var carList = new List('cars', options);
-</script> -->
+        new Carousel(container, options, { Thumbs });
+
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
 </body>
+
 </html>
