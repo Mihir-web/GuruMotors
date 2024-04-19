@@ -5681,3 +5681,7 @@ height: 100% !important;
     height:40px;
     font-size:15px;
   }
+
+  .car_listing_detail{
+    font-weight:700;
+  }
