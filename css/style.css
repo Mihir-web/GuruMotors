@@ -5705,7 +5705,7 @@ height: 100% !important;
     list-style: disc !important;
 }
 .cms-list li::marker{
-    color: #ed1c24;
+    color: #ed1c24 !important;
 }
   /* cms design end */
 
