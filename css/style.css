@@ -5685,3 +5685,17 @@ height: 100% !important;
   .car_listing_detail{
     font-weight:700;
   }
+
+
+  /* cms design start */
+.cms-link{
+    border-bottom: 1px solid #ed1c24;
+    color:#000;
+    font-weight: 400;
+    transition: all 0.25s ease-in-out;
+}
+.cms-bold-heading{
+    font-weight: 500;
+    font-size: 20px;
+}
+  /* cms design end */
