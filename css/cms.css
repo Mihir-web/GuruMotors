@@ -17,3 +17,14 @@
 .cms-feature-type ul li::marker{
 color: #ed1c24;
 }
+
+
+.features-parent-ul{
+    columns: 3;
+}
+
+@media screen and (max-width: 991px) {
+.features-parent-ul{
+    columns: 2;
+}
+}
