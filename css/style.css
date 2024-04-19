@@ -5733,7 +5733,7 @@ height: 100% !important;
   #myCarousel {
     /* max-width: 640px; */
     width: 736px; height: 414px; margin: 5px; overflow: hidden;
-    border-radius: 20px;
+    border-radius: 20px !important;
     margin: 0 auto;
   }
   
