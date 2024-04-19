@@ -5712,7 +5712,13 @@ height: 100% !important;
 
   /* financing form box start*/
   .financing-form-box{
-    background-color: #f2f2f2;
+    background-color: #f2f2f28f;
     border-radius: 20px;
+  }
+
+  .financing-form-box .form-title{
+    color: #ed1c24;
+    font-size: 18px;
+    font-weight: 600;
   }
   /* financing form box end*/
