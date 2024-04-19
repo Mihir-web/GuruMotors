@@ -5722,3 +5722,9 @@ height: 100% !important;
     font-weight: 600;
   }
   /* financing form box end*/
+
+  .banks-logo{
+    height:50px;
+    width:50px;
+    margin:10px 5px;
+  }
