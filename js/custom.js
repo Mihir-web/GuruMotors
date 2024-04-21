@@ -306,6 +306,33 @@ $(function () {
             }
         }
     });
+
+    $('.car-thumb .owl-carousel').owlCarousel({
+        loop: false,
+        margin: 15,
+        mouseDrag: true,
+        // autoplay: false,
+        // autoplayTimeout: 2500,
+        dots: false,
+        nav: true,
+        navText: [`<i class="ti-angle-left" aria-hidden="true"></i>`, `<i class="ti-angle-right" aria-hidden="true"></i>`],
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                dots: false,
+                items: 3,
+            },
+            600: {
+                dots: false,
+                items: 3
+            },
+            1000: {
+                dots: false,
+                items: 9
+            }
+        }
+    });
     
     // MagnificPopup
     // $(".img-zoom").magnificPopup({
