@@ -83,12 +83,12 @@
     </section>
     <!-- Details -->
     <section class="cars2 mt-60 mb-60">
-        <div class="container">
-            <div class="row d-flex justify-content-between mb-4">
+        <div class="container" id="cars">
+            <div class="row d-flex justify-content-between mb-4" >
                 <div class="col-md-4 mb-3">
-                    <div class="inventory-search">
+                    <div class="inventory-search search">
                         <form action="#">
-                            <input type="search_input" placeholder="Search By Name, and Model" required>
+                            <input type="search_input" namw="search" placeholder="Search By Name, and Model" required>
                             <button type="submit"><i class="ti-arrow-top-right"></i></button>
                         </form>
                     </div>
@@ -1481,7 +1481,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-12 mb-30">
-                                <div class="item">
+                                <div class="item list">
                                     <figure> <img src="img/default_image.jpg" alt="" class="img-fluid"> </figure>
                                     <div class="content">
                                         <div class="cont">
@@ -1741,15 +1741,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.0.2/list.min.js"></script>
 
-    <!-- <script>
+    <script>
         var options = {
             valueNames: ['car_name'],
-            page: 4, // Number of items per page
+            page: 40, // Number of items per page
             pagination: true
         };
 
         var carList = new List('cars', options);
-</script> -->
+</script>
 </body>
 
 </html>
