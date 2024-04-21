@@ -15,9 +15,12 @@
     <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <style>
         .gallery-container {
-          max-width: 600px;
+          /* max-width: 600px; */
           margin: 0 auto;
           text-align: center;
+          background-color: #f2f2f2;
+          padding:30px;
+          border-radius: 20px;
         }
       
         .main-image {
@@ -26,6 +29,7 @@
           margin-bottom: 20px;
           background-position: center;
           background-size: cover;
+          border-radius: 20px;
         }
       
         .thumbnail {
@@ -33,6 +37,7 @@
           height: 60px;
           margin: 0 5px;
           cursor: pointer;
+          border-radius: 8px;
         }
       
         .thumbnail:hover {
@@ -124,56 +129,21 @@
                         </div>
                     </div>
 
-
-                    <!-- <div class="f-carousel" id="myCarousel">
-                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5290.jpg">
-                            <a href="./img/cars/IMG_5290.jpg" data-fancybox="gallery"><img width="640" height="480"
-                                    alt="" data-lazy-src="./img/cars/IMG_5290.jpg" /></a>
+                    <div class="gallery-container d-flex justify-content-center">
+                        <div>
+                            <img class="main-image img-fluid" src="./img/cars/IMG_5290.jpg" alt="Product Image">
                         </div>
-                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5291.jpg">
-                            <a href="./img/cars/IMG_5291.jpg" data-fancybox="gallery"><img width="640" height="480"
-                                    alt="" data-lazy-src="./img/cars/IMG_5291.jpg" /></a>
-                        </div>
-                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5292.jpg">
-                            <a href="./img/cars/IMG_5292.jpg" data-fancybox="gallery"><img width="640" height="480"
-                                    alt="" data-lazy-src="./img/cars/IMG_5292.jpg" /></a>
-                        </div>
-                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5293.jpg">
-                            <a href="./img/cars/IMG_5293.jpg" data-fancybox="gallery"><img width="640" height="480"
-                                    alt="" data-lazy-src="./img/cars/IMG_5293.jpg" /></a>
-                        </div>
-                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5294.jpg">
-                            <a href="./img/cars/IMG_5294.jpg" data-fancybox="gallery"><img width="640" height="480"
-                                    alt="" data-lazy-src="./img/cars/IMG_5294.jpg" /></a>
-                        </div>
-                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5295.jpg">
-                            <a href="./img/cars/IMG_5295.jpg" data-fancybox="gallery"><img width="640" height="480"
-                                    alt="" data-lazy-src="./img/cars/IMG_5295.jpg" /></a>
-                        </div>
-                        <div class="f-carousel__slide" data-thumb-src="./img/cars/IMG_5296.jpg">
-                            <a href="./img/cars/IMG_5296.jpg" data-fancybox="gallery"><img width="640" height="480"
-                                    alt="" data-lazy-src="./img/cars/IMG_5296.jpg" /></a>
-                        </div>
-                    </div> -->
-                    <div class="gallery-container">
-                        <div style="max-width: 100%;
-                        height: 400px;
-                        margin-bottom: 20px;
-                        background-position: center;
-                        background-size: cover;display: flex; justify-content: center;">
-                            <img class="main-image" src="./img/cars/IMG_5290.jpg" alt="Product Image">
-                        </div>
-                        <div class="thumbnails">
-                          <img class="thumbnail" src="./img/cars/IMG_5290.jpg" alt="Thumbnail 1">
-                          <img class="thumbnail" src="./img/cars/IMG_5291.jpg" alt="Thumbnail 1">
-                          <img class="thumbnail" src="./img/cars/IMG_5292.jpg" alt="Thumbnail 1">
-                          <img class="thumbnail" src="./img/cars/IMG_5293.jpg" alt="Thumbnail 1">
-                          <img class="thumbnail" src="./img/cars/IMG_5294.jpg" alt="Thumbnail 1">
-                          <img class="thumbnail" src="./img/cars/IMG_5295.jpg" alt="Thumbnail 1">
-                          <img class="thumbnail" src="./img/cars/IMG_5296.jpg" alt="Thumbnail 1">
+                        <div class="thumbnails col-12">
+                          <img class="thumbnail" src="./img/cars/IMG_5290.jpg">
+                          <img class="thumbnail" src="./img/cars/IMG_5291.jpg">
+                          <img class="thumbnail" src="./img/cars/IMG_5292.jpg">
+                          <img class="thumbnail" src="./img/cars/IMG_5293.jpg">
+                          <img class="thumbnail" src="./img/cars/IMG_5294.jpg">
+                          <img class="thumbnail" src="./img/cars/IMG_5295.jpg">
+                          <img class="thumbnail" src="./img/cars/IMG_5296.jpg">
                           <!-- Add more thumbnails as needed -->
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <!-- Sidebar -->
                 <div class="col-lg-4 col-md-12">
@@ -194,10 +164,10 @@
                             <div class="features"><span><i class="omfi-door"></i> Trim</span>
                                 <p>SE FWD</p>
                             </div>
-                            <div class="features"><span><i class="omfi-passengers"></i> Exterior</span>
+                            <div class="features"><span><i class="omfi-passengers"></i> Exterior Color</span>
                                 <p>White</p>
                             </div>
-                            <div class="features"><span><i class="omfi-passengers"></i> Interior</span>
+                            <div class="features"><span><i class="omfi-passengers"></i> Interior Color</span>
                                 <p>Black</p>
                             </div>
                             <div class="features"><span><i class="omfi-transmission"></i> Fuel Capacity</span>
@@ -216,8 +186,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="row">
+            
+                <div class="row my-5">
                     <div class="col-md-12 mb-60">
                         <h3>Description</h3>
                         <p>***EASY FINANCE APPROVALS***NO ACCIDENTS*SUNROOF*ALLOYS*BLUETOOTH*HEATED SEATS*BACK UP CAM
@@ -414,7 +384,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </div>
     </section>
     <!-- Lets Talk -->
