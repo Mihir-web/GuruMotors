@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>GuruMotors - Car Detail</title>
+    <link rel="shortcut icon" href="img/logo-dark.png" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cms.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <style>
+        .gallery-container {
+          /* max-width: 600px; */
+          margin: 0 auto;
+          text-align: center;
+          background-color: #f2f2f2;
+          padding:30px;
+          border-radius: 20px;
+        }
+      
+        .main-image {
+          max-width: 100%;
+          height: 400px;
+          margin-bottom: 20px;
+          background-position: center;
+          background-size: cover;
+          border-radius: 20px;
+          transition: all 0.25s ease-in-out !important;
+        }
+      
+        .thumbnail {
+          width: 60px;
+          height: 60px;
+          margin: 0 5px;
+          cursor: pointer;
+          border-radius: 8px;
+          transition: all 0.25s ease-in-out;
+        }
+      
+        .thumbnail:hover {
+          border: 2px solid #e1400f;
+        }
+
+       
+      </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                <a class="logo" href="index.html"> <img src="img/logo.png" class="logo-img" alt=""> </a>
+            </div>
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span
+                    class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span> </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"> <a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="finance.html">Finance</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cars.html">Inventory</a></li>
+                    <!-- <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Inventory <i
+                                class="ti-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cars.html" class="dropdown-item active"><span>Sedan</span></a></li>
+                            <li><a href="cars.html" class="dropdown-item"><span>SUV</span></a></li>
+                            <li><a href="cars.html" class="dropdown-item"><span>Small</span></a></li>
+                            <li><a href="cars.html" class="dropdown-item"><span>Convetible</span></a></li>
+                            <li><a href="cars.html" class="dropdown-item"><span>Luxry</span></a></li>
+                            <li><a href="cars.html" class="dropdown-item"><span>Sport</span></a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="navbar-right">
+                    <div class="wrap">
+                        <div class="icon"> <i class="flaticon-phone-call"></i> </div>
+                        <div class="text">
+                            <p>Need help?</p>
+                            <h5><a href="tel:6478966642">+1 647-896-6642</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Header Banner -->
+    <section class="banner-header section-padding bg-img" data-overlay-dark="6" data-background="img/slider/11.jpg">
+        <div class="v-middle">
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <h6>Car Detail</h6>
+                    <h1>Volkswagen Jetta <span>2020</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Details -->
+    <section class="car-details section-padding" style="padding: 30px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <!--  Gallery Image -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Image Gallery</h3>
+                        </div>
+                    </div>
+
+                    <div class="gallery-container car-thumb d-flex justify-content-center wow fadeInLeft">
+                        <div>
+                            <a href="./img/cars/valkswagen_jetta/IMG_5251.jpg" class="fancybox">
+                            <img class="main-image img-fluid" src="./img/cars/valkswagen_jetta/IMG_5251.jpg" alt="Product Image">
+                        </a>
+                        </div>
+                        <div class="thumbnails owl-carousel col-12">
+                          <img class="thumbnail" src="./img/cars/valkswagen_jetta/IMG_5251.jpg">
+                          <img class="thumbnail" src="./img/cars/valkswagen_jetta/IMG_5252.jpg">
+                          <img class="thumbnail" src="./img/cars/valkswagen_jetta/IMG_5253.jpg">
+                          <img class="thumbnail" src="./img/cars/valkswagen_jetta/IMG_5254.jpg">
+                          <img class="thumbnail" src="./img/cars/valkswagen_jetta/IMG_5255.jpg">
+                          <img class="thumbnail" src="./img/cars/valkswagen_jetta/IMG_5256.jpg">
+                          <!-- Add more thumbnails as needed -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar -->
+                <div class="col-lg-4 col-md-12 wow fadeInUp">
+                    <div class="sidebar-car">
+                        <div class="title d-flex justify-content-between">
+                            <h4>$22,999</h4>
+                            <h4>/</h4>
+                            <div>
+                                <h4>$187 <span>/ Bi weekly</span></h4>
+                                <h4><span>7.99% for 84 months</span></h4>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="features"><span><i class="fa-solid fa-car"></i> Model</span>
+                                <p>2020</p>
+                            </div>
+                            <div class="features"><span><i class="fa-solid fa-hashtag"></i> Trim</span>
+                                <p>Highline FWD</p>
+                            </div>
+                            <div class="features"><span><i class="fa-solid fa-droplet"></i> Exterior Color</span>
+                                <p>Silver</p>
+                            </div>
+                            <div class="features"><span><i class="fa-solid fa-paint-roller"></i> Interior Color</span>
+                                <p>Black</p>
+                            </div>
+                            <div class="features"><span><i class="fa-regular fa-engine"></i> Engine</span>
+                                <p>1.4L</p>
+                            </div>
+                            <div class="features"><span><i class="omfi-transmission"></i> Transmission</span>
+                                <p>Automatic</p>
+                            </div>
+                            <div class="features"><span><i class="fa-solid fa-road"></i> Km Driven</span>
+                                <p>88,545</p>
+                            </div>
+                            <div class="btn-double mt-30" data-grouptype="&amp;"> <a href="#0">Contact Us</a> <a
+                                    href="https://api.whatsapp.com/send?phone=8551004444" target="_blank"><span
+                                        class="fa-brands fa-whatsapp"></span> WhatsApp</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                <div class="row my-5">
+                    <div class="col-md-12 mb-60">
+                        <h3>Description</h3>
+                        <p>***EASY FINANCE APPROVALS***NO ACCIDENTS*SUNROOF*ALLOYS*BLUETOOTH*HEATED SEATS*BACK UP CAM
+                        AND MORE! LOVE AT FIRST SIGHT! VEHICLE IS LIKE NEW! QUALITY ALL AROUND VEHICLE. GREAT
+                        MID-SIZE SEDAN FOR SMALL FAMILY OR STUDENT. ABSOLUTELY FLAWLESS, SMOOTH, SPORTY RIDE AND
+                        GREAT ON GAS! MECHANICALLY A+ DEPENDABLE, RELIABLE, COMFORTABLE, CLEAN INSIDE AND OUT.
+                        POWERFUL YET FUEL EFFICIENT ENGINE. HANDLES VERY WELL WHEN DRIVING.</p>
+
+
+
+                        <p class="cms-description-title">Make this yours today BECAUSE YOU DESERVE IT</p>
+
+
+
+                        <p>WE HAVE SKILLED AND KNOWLEDGEABLE SALES STAFF WITH MANY YEARS OF EXPERIENCE SATISFYING ALL
+                        OUR CUSTOMERS NEEDS. THEY'LL WORK WITH YOU TO FIND THE RIGHT VEHICLE AND AT THE RIGHT PRICE
+                        YOU CAN AFFORD. WE GUARANTEE YOU WILL HAVE A PLEASANT SHOPPING EXPERIENCE THAT IS FUN,
+                        INFORMATIVE, HASSLE FREE AND NEVER HIGH PRESSURED. PLEASE DON'T HESITATE TO GIVE US A CALL
+                        OR VISIT OUR INDOOR SHOWROOM TODAY! WE'RE HERE TO SERVE YOU!!</p>
+
+
+
+                        <p class="cms-description-title">Financing</p>
+
+
+
+                        <p>We offer amazing financing options. Our Financing specialists can get you INSTANTLY approved
+                        for a car loan with the interest rates as low as 3.99% and $0 down (O.A.C). Additional
+                        financing fees may apply. Auto Financing is our specialty. Our experts are proud to say 100%
+                        APPLICATIONS ACCEPTED, FINANCE ANY CAR, ANY CREDIT, EVEN NO CREDIT! It's FREE TO APPLY and
+                        Our process is fast & easy. We can often get YOU AN approval and deliver your NEW car the
+                        SAME DAY.</p>
+
+
+
+                        <p class="cms-description-title">Price</p>
+
+
+
+                        <p>FRONTIER FINE CARS is known to be one of the most competitive dealerships within the Greater
+                        Toronto Area providing high quality vehicles at low price points. Prices are subject to
+                        change without notice. All prices are price of the vehicle plus HST, Licensing & Safety
+                        Certification. DISCLAIMER: This vehicle is not Drivable as it is not Certified. All vehicles
+                        we sell are Drivable after certification, which is available for $695 but not manadatory.</p>
+
+
+
+                        <p class="cms-description-title">Trade</p>
+                        <p>Have a trade? Well take it! We offer free appraisals for our valued clients that
+                        would like to trade in their old unit in for a new one.</p>
+
+
+
+                        <p class="cms-description-title">About us</p>
+
+
+
+                        <p>Frontier fine cars, offers a huge selection of vehicles in an immaculate INDOOR showroom.
+                        Our goal is to provide our customers WITH quality vehicles AT EXCELLENT prices with
+                        IMPECCABLE customer service. Not only do we sell vehicles, we always sell peace of mind!</p>
+
+
+
+                        <p>Buy with confidence and call today 416-759-2277 or email us to book a test drive now!
+                        frontierfinecars@hotmail.com Located @ 1261 Kennedy Rd Unit a in Scarborough</p>
+
+
+
+                        <p class="cms-description-title">NO REASONABLE OFFERS REFUSED</p>
+
+
+
+                        <p>DISCLAIMER: This vehicle is not Drivable as it is not Certified. All vehicles we sell are
+                        Drivable after certification, which is available for $695</p>
+
+                        <p>Thank you for your consideration & we look forward to putting you in your next vehicle!
+                        Serving used cars Toronto, Scarborough, Pickering, Ajax, Oshawa, Whitby, Markham, Richmond
+                        Hill, Vaughn, Woodbridge, Mississauga, Trenton, Peterborough, Lindsay, Bowmanville,
+                        Oakville, Stouffville, Uxbridge, Sudbury, Thunder Bay,Timmins, Sault Ste. Marie, London,
+                        Kitchener, Brampton, Cambridge, Georgetown, St Catherines, Bolton, Orangeville, Hamilton,
+                        North York, Etobicoke, Kingston, Barrie, North Bay, Huntsville, Orillia</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h3>Features</h3>
+                        <ul class="features-parent-ul">
+                            <li class="cms-feature-type"><span>Mechanical</span>
+                                <ul>
+                                    <li>Anti-Lock Brakes</li>
+                                    <li>Power Steering</li>
+                                    <li>4-Wheel Disc Brakes</li>
+                                    <li>Push Button Start</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Safety</span>
+                                <ul>
+                                    <li>Driver Air Bag</li>
+                                    <li>Passenger Air Bag</li>
+                                    <li>Side Air Bag</li>
+                                    <li>Traction Control</li>
+                                    <li>Heated Mirrors</li>
+                                    <li>Rear Window Defrost</li>
+                                    <li>Brake Assist</li>
+                                    <li>Stability Control</li>
+                                    <li>Back-Up Camera</li>
+                                    <li>Child Safety Locks</li>
+                                    <li>Rear Head Air Bag</li>
+                                    <li>Rear Parking Aid</li>
+                                    <li>Rearview Camera</li>
+                                    <li>Front Head Air Bag</li>
+                                    <li>Passenger Air Bag Sensor</li>
+                                    <li>Blind Spot Monitor</li>
+                                    <li>Rear Spoiler</li>
+                                    <li>Aluminum Wheels</li>
+                                    <li>Automatic Headlights</li>
+                                    <li>Temporary spare tire</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Exterior</span>
+                                <ul>
+                                    <li>Fog Lights</li>
+                                    <li>Alloy Wheels</li>
+                                    <li>Daytime Running Lights</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Interior</span>
+                                <ul>
+                                    <li>Security System</li>
+                                    <li>Air Conditioning</li>
+                                    <li>Cruise Control</li>
+                                    <li>Keyless Entry</li>
+                                    <li>Tilt Steering Wheel</li>
+                                    <li>Bucket Seat</li>
+                                    <li>Power Door Locks</li>
+                                    <li>Trip Computer</li>
+                                    <li>Leather Steering Wheel</li>
+                                    <li>Heated Steering Wheel</li>
+                                    <li>Steering Wheel Audio Controls</li>
+                                    <li>Driver Vanity Mirror</li>
+                                    <li>Remote Trunk Release</li>
+                                    <li>Rear Bench Seat</li>
+                                    <li>Engine Immobilizer</li>
+                                    <li>Keyless Start</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Power Options</span>
+                                <ul>
+                                    <li>Power Mirrors</li>
+                                    <li>Power Windows</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Media / Nav / Comm</span>
+                                <ul>
+                                    <li>AM/FM Radio</li>
+                                    <li>CD Player</li>
+                                    <li>MP3 Player</li>
+                                    <li>Bluetooth</li>
+                                    <li>Satellite Radio</li>
+                                    <li>Auxiliary Audio Input</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Seating</span>
+                                <ul>
+                                    <li>Heated Seats</li>
+                                    <li>Cloth Seats</li>
+                                    <li>Pass-Through Rear Seat</li>
+                                    <li>Power Driver Seat</li>
+                                    <li>Driver Adjustable Lumbar</li>
+                                    <li>Heated Front Seat(s)</li>
+                                </ul>
+                            </li>
+                            <l class="cms-feature-type"i><span>Comfort</span>
+                                <ul>
+                                    <li>Sunroof / Moonroof</li>
+                                    <li>Climate Control</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Warranty</span>
+                                <ul>
+                                    <li>Warranty Available</li>
+                                    <li>Warranty Included</li>
+                                </ul>
+                            </li>
+                            <li class="cms-feature-type"><span>Convenience</span>
+                                <ul>
+                                    <li>Variable Speed Intermittent Wipers</li>
+                                    <li>Passenger Vanity Mirror</li>
+                                    <li>Driver Illuminated Vanity Mirror</li>
+                                    <li>Passenger Illuminated Visor Mirror</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div>
+                            Please contact us to confirm pricing, features, odometer, and availability of this vehicle. Although every effort is made to provide accurate, reliable, and current information, we provide no guarantee as to the reliability, completeness, or accuracy of the information; and it may be subject to change without notice.
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+    <!-- Lets Talk -->
+    <section class="lets-talk bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="img/slider/3.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h6>Contact Us</h6>
+                    <h5>Want to reach out to us?</h5>
+                    <p>Don't hesitate and send us a message.</p> <a href="tel:+6478966642"
+                        class="button-1 mt-15 mb-15 mr-10 wow fadeInLeft"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a> <a
+                        href="contact.html" class="button-2 mt-15 mb-15 wow fadeInRight">Contact Us <span
+                            class="ti-arrow-top-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients -->
+    <section class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/bmw_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/audi_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/mercedes_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/volvo_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/jeep_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/subaru_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/volkswagen_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/hyundai_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/honda_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/lexus_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/mitsubishi_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/nissan_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/ford_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/toyota_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/dodge_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/kia_logo.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="img/clients/chrysler_logo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer clearfix">
+        <div class="container">
+            <!-- second footer -->
+            <div class="second-footer">
+                <div class="row">
+                    <!-- about & social icons -->
+                    <div class="col-md-4 widget-area">
+                        <div class="widget clearfix">
+                            <div class="footer-logo"><img src="img/logo.png" alt=""></div>
+                            <!-- <div class="footer-logo"><h2>CARE<span>X</span></h2></div> -->
+                            <div class="widget-text">
+                                <p>Rent a car imperdiet sapien porttito the bibenum ellentesue the commodo erat nesuen.
+                                </p>
+                                <div class="social-icons">
+                                    <ul class="list-inline">
+                                        <a href="whatsapp://send?phone=16478966642">
+                                            <li><i class="fa-brands fa-whatsapp"></i></li>
+                                        </a>
+                                        <a href="#">
+                                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                                        </a>
+                                        <a href="https://www.instagram.com/cars_by_guru?igsh=MW9kMWduZ2puNm83NQ==">
+                                            <li><i class="fa-brands fa-instagram"></i></li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- quick links -->
+                    <div class="col-md-3 offset-md-1 widget-area">
+                        <div class="widget clearfix usful-links">
+                            <h3 class="widget-title">Quick Links</h3>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="cars.html">Our Inventory</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- subscribe -->
+                    <!-- <div class="col-md-4 widget-area">
+                        <div class="widget clearfix">
+                            <h3 class="widget-title">Subscribe</h3>
+                            <p>Want to be notified about our services. Just sign up and we'll send you a notification by
+                                email.</p>
+                            <div class="widget-newsletter">
+                                <form action="#">
+                                    <input type="email" placeholder="Email Address" required>
+                                    <button type="submit"><i class="ti-arrow-top-right"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-md-3 first-footer py-5">
+                        <div class="row m-0 p-0">
+                            <div class="col-md-12">
+                                <div class="links footer-contact-links">
+                                    <div class="footer-contact-links-wrapper row">
+                                        <div class="col-12 footer-contact-link-wrapper mb-3">
+                                            <div class="image-wrapper footer-contact-link-icon">
+                                                <div class="icon-footer"> <i class="flaticon-phone-call"></i> </div>
+                                            </div>
+                                            <div class="footer-contact-link-content">
+                                                <h6>Call us</h6>
+                                                <p>+1 647-896-6642</p>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="footer-contact-links-divider"></div> -->
+                                        <div class="col-12 footer-contact-link-wrapper mb-3">
+                                            <div class="image-wrapper footer-contact-link-icon">
+                                                <div class="icon-footer"> <i class="omfi-envelope"></i> </div>
+                                            </div>
+                                            <div class="footer-contact-link-content">
+                                                <h6>Write to us</h6>
+                                                <p>admin@gurumotors.com</p>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="footer-contact-links-divider"></div> -->
+                                        <div class="col-12 footer-contact-link-wrapper">
+                                            <div class="image-wrapper footer-contact-link-icon">
+                                                <div class="icon-footer"> <i class="omfi-location"></i> </div>
+                                            </div>
+                                            <div class="footer-contact-link-content">
+                                                <h6>Address</h6>
+                                                <p>1261 Kennedy Rd S,Scarborough</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bottom footer -->
+            <div class="bottom-footer-text">
+                <div class="row copyright">
+                    <div class="col-md-12">
+                        <p class="mb-0">&copy;2024 <a href="#">GuruMotors</a>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-migrate-3.4.1.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/wow.js"></script>
+    
+    
+<script>
+  $(document).ready(function() {
+    new WOW().init();
+    // Initialize FancyBox
+    $('.thumbnail').on('click', function() {
+      var imgSrc = $(this).attr('src');
+      $('.main-image').attr('src', imgSrc);
+      $('.main-image').parent('a').attr('href', imgSrc);
+    });
+
+    $('.main-image').on('click', function() {
+      var index = $(this).index();
+      $('[data-fancybox="product-gallery"]').eq(index).trigger('click');
+    });
+
+    $('[data-fancybox="product-gallery"]').fancybox({
+      thumbs : {
+        autoStart : true
+      }
+    });
+
+    $('.fancybox').fancybox({
+        clickContent: 'close',
+        buttons: ['zoom', 'slideShow', 'fullScreen', 'thumbs', 'close'],
+      });
+  });
+</script>
+</body>
+
+</html>

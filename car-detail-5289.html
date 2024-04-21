@@ -602,6 +602,7 @@
     $('.thumbnail').on('click', function() {
       var imgSrc = $(this).attr('src');
       $('.main-image').attr('src', imgSrc);
+      $('.main-image').parent('a').attr('href', imgSrc);
     });
 
     $('.main-image').on('click', function() {
