@@ -229,7 +229,7 @@ $(function () {
             },
             1000: {
                 dots: false,
-                items: 1,
+                items: 3,
             }
         }
     });
