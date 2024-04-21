@@ -288,7 +288,7 @@ $(function () {
         margin: 10,
         mouseDrag: true,
         autoplay: true,
-        autoplayTimeout: 2500,
+        autoplayTimeout: 2000,
         dots: false,
         nav: false,
         navText: ["<span class='lnr ti-angle-left'></span>", "<span class='lnr ti-angle-right'></span>"],
