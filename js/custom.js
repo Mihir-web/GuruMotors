@@ -213,9 +213,10 @@ $(function () {
         loop: true,
         margin: 30,
         autoHeight: false,
+        autoplay: true,
         autoplayTimeout: 5000,
         dots: false,
-        nav: true,
+        nav: false,
         navText: ['<i class="ti-angle-left" aria-hidden="true"></i>', '<i class="ti-angle-right" aria-hidden="true"></i>'],
         responsiveClass: true,
         responsive: {
