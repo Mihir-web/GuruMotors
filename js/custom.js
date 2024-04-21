@@ -321,7 +321,7 @@ $(function () {
         responsive: {
             0: {
                 dots: false,
-                items: 3,
+                items: 2,
             },
             600: {
                 dots: false,
