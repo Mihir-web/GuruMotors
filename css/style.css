@@ -5748,3 +5748,23 @@ height: 100% !important;
     width:50px;
     border-radius: 20px !important;
   }
+
+
+  /* happy customer start*/
+  .happy_client_image {
+    height: 450px;
+    width: 350px;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    border: 2px solid #ed1c24;
+    overflow: hidden;
+}
+.happy_client_image img{
+    height:100%;
+}
+
+.happy_client_image:hover img {
+    transform: scale(1.1);
+}
+/* happy customer end*/

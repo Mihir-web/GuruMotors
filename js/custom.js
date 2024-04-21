@@ -81,6 +81,7 @@ $(function () {
     
     // Slider  
     $(document).ready(function () {
+        new WOW().init();
         var owl = $('.header .owl-carousel');
         // Slider owlCarousel - (Inner Page Slider)
         $('.slider .owl-carousel').owlCarousel({
