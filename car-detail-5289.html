@@ -30,6 +30,7 @@
           background-position: center;
           background-size: cover;
           border-radius: 20px;
+          transition: all 0.25s ease-in-out !important;
         }
       
         .thumbnail {
@@ -130,9 +131,11 @@
                         </div>
                     </div>
 
-                    <div class="gallery-container car-thumb d-flex justify-content-center">
+                    <div class="gallery-container car-thumb d-flex justify-content-center wow fadeInLeft">
                         <div>
+                            <a href="./img/cars/IMG_5290.jpg" class="fancybox">
                             <img class="main-image img-fluid" src="./img/cars/IMG_5290.jpg" alt="Product Image">
+                        </a>
                         </div>
                         <div class="thumbnails owl-carousel col-12">
                           <img class="thumbnail" src="./img/cars/IMG_5290.jpg">
@@ -147,7 +150,7 @@
                     </div>
                 </div>
                 <!-- Sidebar -->
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-4 col-md-12 wow fadeInUp">
                     <div class="sidebar-car">
                         <div class="title d-flex justify-content-between">
                             <h4>$18,500</h4>
@@ -159,25 +162,25 @@
 
                         </div>
                         <div class="item">
-                            <div class="features"><span><i class="omfi-condition"></i> Model</span>
+                            <div class="features"><span><i class="fa-solid fa-car"></i> Model</span>
                                 <p>2017</p>
                             </div>
-                            <div class="features"><span><i class="omfi-door"></i> Trim</span>
+                            <div class="features"><span><i class="fa-solid fa-hashtag"></i> Trim</span>
                                 <p>SE FWD</p>
                             </div>
-                            <div class="features"><span><i class="omfi-passengers"></i> Exterior Color</span>
+                            <div class="features"><span><i class="fa-solid fa-droplet"></i> Exterior Color</span>
                                 <p>White</p>
                             </div>
-                            <div class="features"><span><i class="omfi-passengers"></i> Interior Color</span>
+                            <div class="features"><span><i class="fa-solid fa-paint-roller"></i> Interior Color</span>
                                 <p>Black</p>
                             </div>
-                            <div class="features"><span><i class="omfi-transmission"></i> Fuel Capacity</span>
+                            <div class="features"><span><i class="fa-regular fa-engine"></i> Engine</span>
                                 <p>2.4L</p>
                             </div>
-                            <div class="features"><span><i class="omfi-luggage"></i> Transmission</span>
+                            <div class="features"><span><i class="omfi-transmission"></i> Transmission</span>
                                 <p>Automatic</p>
                             </div>
-                            <div class="features"><span><i class="omfi-luggage"></i> Km Driven</span>
+                            <div class="features"><span><i class="fa-solid fa-road"></i> Km Driven</span>
                                 <p>1,29,937</p>
                             </div>
                             <div class="btn-double mt-30" data-grouptype="&amp;"> <a href="#0">Contact Us</a> <a
@@ -396,8 +399,8 @@
                     <h6>Contact Us</h6>
                     <h5>Want to reach out to us?</h5>
                     <p>Don't hesitate and send us a message.</p> <a href="tel:+6478966642"
-                        class="button-1 mt-15 mb-15 mr-10"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a> <a
-                        href="contact.html" class="button-2 mt-15 mb-15">Contact Us <span
+                        class="button-1 mt-15 mb-15 mr-10 wow fadeInLeft"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a> <a
+                        href="contact.html" class="button-2 mt-15 mb-15 wow fadeInRight">Contact Us <span
                             class="ti-arrow-top-right"></span></a>
                 </div>
             </div>
@@ -589,9 +592,12 @@
     <script src="js/datepicker.js"></script>
     <script src="js/YouTubePopUp.js"></script>
     <script src="js/custom.js"></script>
-
+    <script src="js/wow.js"></script>
+    
+    
 <script>
   $(document).ready(function() {
+    new WOW().init();
     // Initialize FancyBox
     $('.thumbnail').on('click', function() {
       var imgSrc = $(this).attr('src');
@@ -608,6 +614,11 @@
         autoStart : true
       }
     });
+
+    $('.fancybox').fancybox({
+        clickContent: 'close',
+        buttons: ['zoom', 'slideShow', 'fullScreen', 'thumbs', 'close'],
+      });
   });
 </script>
 </body>
